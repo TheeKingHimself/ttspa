@@ -10,33 +10,7 @@
   <link rel="icon" href="https://www.tropicaltouchspas.com/wp-content/uploads/2022/07/cropped-divider1-192x192.png" sizes="192x192" />
   <link rel="apple-touch-icon" href="https://www.tropicaltouchspas.com/wp-content/uploads/2022/07/cropped-divider1-180x180.png" />
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          animation: {
-            fadeIn: "fadeIn 1.5s ease-in-out",
-            scaleUp: "scaleUp 0.8s ease-in-out",
-            bounceHover: "bounceHover 0.5s infinite",
-          },
-          keyframes: {
-            fadeIn: {
-              "0%": { opacity: "0" },
-              "100%": { opacity: "1" },
-            },
-            scaleUp: {
-              "0%": { transform: "scale(0.95)" },
-              "100%": { transform: "scale(1)" },
-            },
-            bounceHover: {
-              "0%, 100%": { transform: "translateY(-3px)" },
-              "50%": { transform: "translateY(0)" },
-            },
-          },
-        },
-      },
-    };
-  </script>
+  
 </head>
 
 <body class="bg-gray-100">
@@ -49,13 +23,20 @@
         <img 
           src="https://www.tropicaltouchspas.com/wp-content/uploads/2022/07/Tropical-Touch-Logo-600x68-1.png" 
           alt="Tropical Touch Spa Logo" 
-          class="h-12"
+          class="h-8 md:h-12"
         />
       </a>
-      
-      <!-- Navigation Links -->
-      <nav>
-        <ul class="flex space-x-4 text-gray-700">
+  
+      <!-- Hamburger Menu (Mobile) -->
+      <button class="navbar-burger flex items-center text-gray-700 lg:hidden">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+  
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex space-x-4 text-gray-700">
+        <ul class="flex space-x-4">
           <li><a href="/" class="hover:text-pink-500">Home</a></li>
           <li><a href="/about" class="hover:text-pink-500">About</a></li>
           <li><a href="/memberships" class="hover:text-pink-500">Memberships</a></li>
@@ -65,7 +46,41 @@
         </ul>
       </nav>
     </div>
+  
+    <!-- Mobile Navigation Menu -->
+    <div class="navbar-menu hidden fixed inset-0 bg-white flex flex-col items-center justify-center space-y-6 text-gray-700 z-50">
+      <a href="/" class="text-lg hover:text-pink-500">Home</a>
+      <a href="/about" class="text-lg hover:text-pink-500">About</a>
+      <a href="/memberships" class="text-lg hover:text-pink-500">Memberships</a>
+      <a href="/locations" class="text-lg hover:text-pink-500">Locations</a>
+      <a href="/contact" class="text-lg hover:text-pink-500">Contact</a>
+      <a href="https://www.fresha.com/a/tropical-touch-ann-arbor-ann-arbor-416-west-huron-street-zk2phaa9/all-offer?menu=true&pId=703555" class="px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600">Book Now</a>
+      <button class="navbar-close text-gray-700">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
   </header>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.querySelector('.navbar-menu');
+      const close = document.querySelector('.navbar-close');
+  
+      // Open mobile menu
+      burger.addEventListener('click', function () {
+        menu.classList.remove('hidden');
+      });
+  
+      // Close mobile menu
+      close.addEventListener('click', function () {
+        menu.classList.add('hidden');
+      });
+    });
+  </script>
+  
   
 
   <!-- Hero Section -->
