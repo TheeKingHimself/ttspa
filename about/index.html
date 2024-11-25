@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tropical Touch Spa offers full-body and bikini acupressure sessions tailored for your relaxation.">
+  <title>Tropical Touch Spa - Discover True Relaxation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="icon" href="https://www.tropicaltouchspas.com/wp-content/uploads/2022/07/cropped-divider1-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon" href="https://www.tropicaltouchspas.com/wp-content/uploads/2022/07/cropped-divider1-180x180.png" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            fadeIn: "fadeIn 1.5s ease-in-out",
+            scaleUp: "scaleUp 0.8s ease-in-out",
+            bounceHover: "bounceHover 0.5s infinite",
+          },
+          keyframes: {
+            fadeIn: {
+              "0%": { opacity: "0" },
+              "100%": { opacity: "1" },
+            },
+            scaleUp: {
+              "0%": { transform: "scale(0.95)" },
+              "100%": { transform: "scale(1)" },
+            },
+            bounceHover: {
+              "0%, 100%": { transform: "translateY(-3px)" },
+              "50%": { transform: "translateY(0)" },
+            },
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md animate-fadeIn">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="/" class="flex items-center">
+        <img 
+          src="https://www.tropicaltouchspas.com/wp-content/uploads/2022/07/Tropical-Touch-Logo-600x68-1.png" 
+          alt="Tropical Touch Spa Logo" 
+          class="h-12"
+        />
+      </a>
+      
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="flex space-x-4 text-gray-700">
+          <li><a href="/" class="hover:text-pink-500">Home</a></li>
+          <li><a href="/about" class="hover:text-pink-500">About</a></li>
+          <li><a href="/memberships" class="hover:text-pink-500">Memberships</a></li>
+          <li><a href="/locations" class="hover:text-pink-500">Locations</a></li>
+          <li><a href="/contact" class="hover:text-pink-500">Contact</a></li>
+          <li><a href="https://www.fresha.com/a/tropical-touch-ann-arbor-ann-arbor-416-west-huron-street-zk2phaa9/all-offer?menu=true&pId=703555" class="px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <div class="relative bg-cover bg-center h-64 animate-fadeIn" style="background-image: url('/images/main-bg.png');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center">
+      <h1 class="text-4xl md:text-6xl font-bold">About Us</h1>
+      <p class="mt-4 text-lg md:text-xl">Hi Bunny</p>
+      <a href="/locations" class="mt-6 px-6 py-3 bg-pink-500 rounded-md text-white text-lg font-semibold hover:bg-pink-600">Book an Appointment</a>
+    </div>
+  </div>
+
+ 
+
+  <section class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6">
+      <!-- Welcome Section -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-pink-500">Welcome</h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          Tropical Touch Spa was founded in 2014. We offer a wide variety of services welcoming all to enjoy a relaxing, soothing, healing environment.
+        </p>
+        <p class="mt-2 text-lg text-gray-600 max-w-2xl mx-auto">
+          Relaxing is never easy on your own. Come find your oasis with our beautiful staff, leaving you content and de-stressed.
+        </p>
+      </div>
+  
+      <!-- About Section with Images -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Left Content -->
+        <div class="space-y-6">
+          <div>
+            <img
+            src="/images/500x300.png"
+            alt="Relaxing Spa"
+              class="rounded-lg shadow-md"
+            />
+          </div>
+          <p class="text-gray-600 leading-relaxed">
+            At Tropical Touch Spa, we believe in creating a serene environment where you can unwind and rejuvenate. From the moment you enter, you'll be welcomed by a peaceful atmosphere and the soothing sounds of tranquility.
+          </p>
+          <div>
+            <img
+            src="/images/500x300.png"
+            alt="Professional Staff"
+              class="rounded-lg shadow-md"
+            />
+          </div>
+        </div>
+  
+        <!-- Right Content -->
+        <div class="space-y-6">
+          <p class="text-gray-600 leading-relaxed">
+            Our professional staff is dedicated to your well-being, offering customized treatments to meet your needs. Whether you're looking for acupressure, relaxation, or a moment to escape, we’ve got you covered.
+          </p>
+          <div>
+            <img
+              src="/images/500x300.png"
+              alt="Healing Services"
+              class="rounded-lg shadow-md"
+            />
+          </div>
+          <p class="text-gray-600 leading-relaxed">
+            Since 2014, we've been a haven for individuals seeking a personal retreat. Your health and happiness are at the heart of everything we do.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12 animate-fadeIn">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- Opening Hours -->
+        <div>
+          <h3 class="text-lg font-bold text-pink-500 mb-4">Opening Hours</h3>
+          <p class="text-sm mb-2">Hours may differ due to holidays.<br>Call your nearest spa to confirm.</p>
+          <ul class="text-sm space-y-2">
+            <li>Monday: 10 am - 9 pm</li>
+            <li>Tuesday: 10 am - 9 pm</li>
+            <li>Wednesday: 10 am - 9 pm</li>
+            <li>Thursday: 10 am - 9 pm</li>
+            <li>Friday: 10 am - 9 pm</li>
+            <li>Saturday: 10 am - 9 pm</li>
+            <li>Sunday: 12 pm - 7 pm</li>
+          </ul>
+        </div>
+  
+        <!-- Michigan Locations -->
+        <div>
+          <h3 class="text-lg font-bold text-pink-500 mb-4">Michigan Locations</h3>
+          <ul class="text-sm space-y-3">
+            <li><a href="/locations/ann-arbor" class="text-pink-500 hover:underline"><strong>Ann Arbor, MI</strong></a><br>416 W Huron St Suite 20<br>Phone: (734) 773-3147</li>
+            <li><a href="/locations/flint" class="text-pink-500 hover:underline"><strong>Flint, MI</strong></a><br>4225 Miller Rd, Ste B6<br>Phone: (810) 877-6206</li>
+            <li><a href="/locations/grand-rapids" class="text-pink-500 hover:underline"><strong>Grand Rapids, MI</strong></a><br>916 Chicago Dr, Unit A<br>Phone: (616) 342-2922</li>
+            <li><a href="/locations/lansing" class="text-pink-500 hover:underline"><strong>Lansing, MI</strong></a><br>3405 S Cedar St<br>Phone: (517) 574-4795</li>
+          </ul>
+        </div>
+  
+        <!-- More Michigan Locations -->
+        <div>
+          <h3 class="text-lg font-bold text-pink-500 mb-4">More Michigan Locations</h3>
+          <ul class="text-sm space-y-3">
+            <li><a href="/locations/monroe" class="text-pink-500 hover:underline"><strong>Monroe, MI</strong></a><br>325 S Telegraph Rd<br>Phone: (734) 597-2008</li>
+            <li><a href="/locations/mount-clemens" class="text-pink-500 hover:underline"><strong>Mount Clemens, MI</strong></a><br>311 Southbound Gratiot Ave<br>Phone: (586) 690-8167</li>
+            <li><a href="/locations/southgate" class="text-pink-500 hover:underline"><strong>Southgate, MI</strong></a><br>12154 Dix Toledo Rd<br>Phone: (248) 242-0195</li>
+            <li><a href="/locations/walled-lake" class="text-pink-500 hover:underline"><strong>Walled Lake, MI</strong></a><br>1332 S Commerce Rd<br>Phone: (248) 438-6757</li>
+          </ul>
+        </div>
+  
+        <!-- Ohio & Canada Locations -->
+        <div>
+          <h3 class="text-lg font-bold text-pink-500 mb-4">Ohio & Canada Locations</h3>
+          <ul class="text-sm space-y-3">
+            <li><a href="/locations/cleveland" class="text-pink-500 hover:underline"><strong>Cleveland, OH</strong></a><br>812 E 185th St<br>Phone: (216) 331-4399</li>
+            <li><a href="/locations/columbus" class="text-pink-500 hover:underline"><strong>Columbus, OH</strong></a><br>850 King Ave<br>Phone: (614) 696-4014</li>
+            <li><a href="/locations/toledo" class="text-pink-500 hover:underline"><strong>Toledo, OH</strong></a><br>4026 Secor Rd<br>Phone: (567) 315-8410</li>
+            <li><a href="/locations/windsor" class="text-pink-500 hover:underline"><strong>Windsor, ON</strong></a><br>75 Riverside Dr E<br>Phone: (519) 962-0757</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Bottom Note -->
+      <div class="mt-12 text-center text-sm text-gray-400 border-t border-gray-700 pt-6">
+        © 2024 Tropical Touch Spa. All rights reserved. | <a href="#" class="text-pink-500 hover:text-pink-400">Privacy Policy</a> | <a href="#" class="text-pink-500 hover:text-pink-400">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+
+</body>
+
+</html>
