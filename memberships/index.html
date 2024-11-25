@@ -13,49 +13,58 @@
 
   <!-- Header -->
   <header class="bg-white shadow-md animate-fadeIn">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Desktop Version -->
+    <div class="hidden lg:flex container mx-auto px-4 py-4 justify-between items-center">
       <!-- Logo -->
-      <a href="/ttspa/" class="flex items-center">
+      <a href="/" class="md:flex items-center block">
         <img 
           src="https://www.tropicaltouchspas.com/wp-content/uploads/2022/07/Tropical-Touch-Logo-600x68-1.png" 
           alt="Tropical Touch Spa Logo" 
-          class="h-8 md:h-12"
+          class="h-12"
         />
       </a>
-  
-      <!-- Hamburger Menu (Mobile) -->
-      <button class="navbar-burger flex items-center text-gray-700 lg:hidden">
-        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-  
-      <!-- Desktop Navigation -->
-      <nav class="hidden lg:flex space-x-4 text-gray-700">
-        <ul class="flex space-x-4">
+      
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="flex space-x-4 text-gray-700">
           <li><a href="/ttspa/" class="hover:text-pink-500">Home</a></li>
           <li><a href="/ttspa/about/" class="hover:text-pink-500">About</a></li>
           <li><a href="/ttspa/memberships/" class="hover:text-pink-500">Memberships</a></li>
           <li><a href="/ttspa/locations" class="hover:text-pink-500">Locations</a></li>
           <li><a href="/ttspa/contact" class="hover:text-pink-500">Contact</a></li>
+  
           <li><a href="https://www.fresha.com/a/tropical-touch-ann-arbor-ann-arbor-416-west-huron-street-zk2phaa9/all-offer?menu=true&pId=703555" class="px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600">Book Now</a></li>
         </ul>
       </nav>
     </div>
   
-    <!-- Mobile Navigation Menu -->
-    <div class="navbar-menu hidden fixed inset-0 bg-white flex flex-col items-center justify-center space-y-6 text-gray-700 z-50">
-      <a href="/ttspa/" class="text-lg hover:text-pink-500">Home</a>
-      <a href="/ttspa/about/" class="text-lg hover:text-pink-500">About</a>
-      <a href="/ttspa/memberships/" class="text-lg hover:text-pink-500">Memberships</a>
-      <a href="/ttspa/locations" class="text-lg hover:text-pink-500">Locations</a>
-      <a href="/ttspa/contact" class="text-lg hover:text-pink-500">Contact</a>
-      <a href="https://www.fresha.com/a/tropical-touch-ann-arbor-ann-arbor-416-west-huron-street-zk2phaa9/all-offer?menu=true&pId=703555" class="px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600">Book Now</a>
-      <button class="navbar-close text-gray-700">
-        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
+    <!-- Mobile Version -->
+    <div class="lg:hidden flex flex-col items-center p-6 space-y-6">
+      <!-- Logo -->
+      <a href="/" class="block">
+        <img 
+          src="https://www.tropicaltouchspas.com/wp-content/uploads/2022/07/Tropical-Touch-Logo-600x68-1.png" 
+          alt="Tropical Touch Spa Logo" 
+          class="h-12 mx-auto"
+        />
+      </a>
+  
+      <!-- Navigation Links -->
+      <nav class="w-full">
+        <ul class="flex justify-center space-x-4 text-gray-700">
+          <li><a href="/ttspa/" class="hover:text-pink-500">Home</a></li>
+          <li><a href="/ttspa/about/" class="hover:text-pink-500">About</a></li>
+          <li><a href="/ttspa/memberships/" class="hover:text-pink-500">Memberships</a></li>
+          <li><a href="/ttspa/locations" class="hover:text-pink-500">Locations</a></li>
+          <li><a href="/ttspa/contact" class="hover:text-pink-500">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Button -->
+      <a href="https://www.fresha.com/a/tropical-touch-ann-arbor-ann-arbor-416-west-huron-street-zk2phaa9/all-offer?menu=true&pId=703555" 
+         class="w-full px-6 py-3 bg-pink-500 text-white text-center rounded-md hover:bg-pink-600">
+        Book Now
+      </a>
     </div>
   </header>
   <!-- Memberships Section -->

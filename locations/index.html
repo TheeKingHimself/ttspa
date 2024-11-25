@@ -43,49 +43,58 @@
 
   <!-- Header -->
   <header class="bg-white shadow-md animate-fadeIn">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Desktop Version -->
+    <div class="hidden lg:flex container mx-auto px-4 py-4 justify-between items-center">
       <!-- Logo -->
-      <a href="/ttspa/" class="flex items-center">
+      <a href="/" class="md:flex items-center block">
         <img 
           src="https://www.tropicaltouchspas.com/wp-content/uploads/2022/07/Tropical-Touch-Logo-600x68-1.png" 
           alt="Tropical Touch Spa Logo" 
-          class="h-8 md:h-12"
+          class="h-12"
         />
       </a>
-  
-      <!-- Hamburger Menu (Mobile) -->
-      <button class="navbar-burger flex items-center text-gray-700 lg:hidden">
-        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-  
-      <!-- Desktop Navigation -->
-      <nav class="hidden lg:flex space-x-4 text-gray-700">
-        <ul class="flex space-x-4">
+      
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="flex space-x-4 text-gray-700">
           <li><a href="/ttspa/" class="hover:text-pink-500">Home</a></li>
           <li><a href="/ttspa/about/" class="hover:text-pink-500">About</a></li>
           <li><a href="/ttspa/memberships/" class="hover:text-pink-500">Memberships</a></li>
           <li><a href="/ttspa/locations" class="hover:text-pink-500">Locations</a></li>
           <li><a href="/ttspa/contact" class="hover:text-pink-500">Contact</a></li>
+  
           <li><a href="https://www.fresha.com/a/tropical-touch-ann-arbor-ann-arbor-416-west-huron-street-zk2phaa9/all-offer?menu=true&pId=703555" class="px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600">Book Now</a></li>
         </ul>
       </nav>
     </div>
   
-    <!-- Mobile Navigation Menu -->
-    <div class="navbar-menu hidden fixed inset-0 bg-white flex flex-col items-center justify-center space-y-6 text-gray-700 z-50">
-      <a href="/ttspa/" class="text-lg hover:text-pink-500">Home</a>
-      <a href="/ttspa/about/" class="text-lg hover:text-pink-500">About</a>
-      <a href="/ttspa/memberships/" class="text-lg hover:text-pink-500">Memberships</a>
-      <a href="/ttspa/locations" class="text-lg hover:text-pink-500">Locations</a>
-      <a href="/ttspa/contact" class="text-lg hover:text-pink-500">Contact</a>
-      <a href="https://www.fresha.com/a/tropical-touch-ann-arbor-ann-arbor-416-west-huron-street-zk2phaa9/all-offer?menu=true&pId=703555" class="px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600">Book Now</a>
-      <button class="navbar-close text-gray-700">
-        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
+    <!-- Mobile Version -->
+    <div class="lg:hidden flex flex-col items-center p-6 space-y-6">
+      <!-- Logo -->
+      <a href="/" class="block">
+        <img 
+          src="https://www.tropicaltouchspas.com/wp-content/uploads/2022/07/Tropical-Touch-Logo-600x68-1.png" 
+          alt="Tropical Touch Spa Logo" 
+          class="h-12 mx-auto"
+        />
+      </a>
+  
+      <!-- Navigation Links -->
+      <nav class="w-full">
+        <ul class="flex justify-center space-x-4 text-gray-700">
+          <li><a href="/ttspa/" class="hover:text-pink-500">Home</a></li>
+          <li><a href="/ttspa/about/" class="hover:text-pink-500">About</a></li>
+          <li><a href="/ttspa/memberships/" class="hover:text-pink-500">Memberships</a></li>
+          <li><a href="/ttspa/locations" class="hover:text-pink-500">Locations</a></li>
+          <li><a href="/ttspa/contact" class="hover:text-pink-500">Contact</a></li>
+        </ul>
+      </nav>
+  
+      <!-- Button -->
+      <a href="https://www.fresha.com/a/tropical-touch-ann-arbor-ann-arbor-416-west-huron-street-zk2phaa9/all-offer?menu=true&pId=703555" 
+         class="w-full px-6 py-3 bg-pink-500 text-white text-center rounded-md hover:bg-pink-600">
+        Book Now
+      </a>
     </div>
   </header>
   
@@ -95,7 +104,7 @@
     <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white text-center">
       <h1 class="text-4xl md:text-6xl font-bold">Discover True Relaxation</h1>
       <p class="mt-4 text-lg md:text-xl">Hi Bunny</p>
-      <a href="/ttspa/locations" class="mt-6 px-6 py-3 bg-pink-500 rounded-md text-white text-lg font-semibold hover:bg-pink-600">Book an Appointment</a>
+      <a href="/locations" class="mt-6 px-6 py-3 bg-pink-500 rounded-md text-white text-lg font-semibold hover:bg-pink-600">Book an Appointment</a>
     </div>
   </div>
 
@@ -114,7 +123,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         <!-- Ann Arbor -->
         <a
-          href="/ttspa/locations/ann-arbor"
+          href="/locations/ann-arbor"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Ann Arbor, MI</h3>
@@ -124,7 +133,7 @@
   
         <!-- Lansing -->
         <a
-          href="/ttspa/locations/lansing"
+          href="/locations/lansing"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Lansing, MI</h3>
@@ -134,7 +143,7 @@
   
         <!-- Monroe -->
         <a
-          href="/ttspa/locations/monroe"
+          href="/locations/monroe"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Monroe, MI</h3>
@@ -144,7 +153,7 @@
   
         <!-- Mount Clemens -->
         <a
-          href="/ttspa/locations/mount-clemens"
+          href="/locations/mount-clemens"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Mount Clemens, MI</h3>
@@ -154,7 +163,7 @@
   
         <!-- Southgate -->
         <a
-          href="/ttspa/locations/southgate"
+          href="/locations/southgate"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Southgate, MI</h3>
@@ -164,7 +173,7 @@
   
         <!-- Flint -->
         <a
-          href="/ttspa/locations/flint"
+          href="/locations/flint"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Flint, MI</h3>
@@ -174,7 +183,7 @@
   
         <!-- Grand Rapids -->
         <a
-          href="/ttspa/locations/grand-rapids"
+          href="/locations/grand-rapids"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Grand Rapids, MI</h3>
@@ -184,7 +193,7 @@
   
         <!-- Walled Lake -->
         <a
-          href="/ttspa/locations/walled-lake"
+          href="/locations/walled-lake"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Walled Lake, MI</h3>
@@ -194,7 +203,7 @@
   
         <!-- Westland -->
         <a
-          href="/ttspa/locations/westland"
+          href="/locations/westland"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Westland, MI</h3>
@@ -210,7 +219,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         <!-- Cleveland -->
         <a
-          href="/ttspa/locations/cleveland"
+          href="/locations/cleveland"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Cleveland, OH</h3>
@@ -220,7 +229,7 @@
   
         <!-- Parma Heights -->
         <a
-          href="/ttspa/locations/parma-heights"
+          href="/locations/parma-heights"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Parma Heights, OH</h3>
@@ -230,7 +239,7 @@
   
         <!-- Toledo -->
         <a
-          href="/ttspa/locations/toledo"
+          href="/locations/toledo"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Toledo, OH</h3>
@@ -240,7 +249,7 @@
   
         <!-- Columbus (King Ave) -->
         <a
-          href="/ttspa/locations/columbus-king"
+          href="/locations/columbus-king"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Columbus, OH (King Ave)</h3>
@@ -250,7 +259,7 @@
   
         <!-- Columbus (Polaris) -->
         <a
-          href="/ttspa/locations/columbus-polaris"
+          href="/locations/columbus-polaris"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Columbus, OH (Polaris)</h3>
@@ -266,7 +275,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Windsor -->
         <a
-          href="/ttspa/locations/windsor"
+          href="/locations/windsor"
           class="bg-white rounded-lg shadow-md p-6 text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-lg"
         >
           <h3 class="text-xl font-semibold text-gray-800">Windsor, ON</h3>
@@ -303,10 +312,10 @@
         <div>
           <h3 class="text-lg font-bold text-pink-500 mb-4">Michigan Locations</h3>
           <ul class="text-sm space-y-3">
-            <li><a href="/ttspa/locations/ann-arbor" class="text-pink-500 hover:underline"><strong>Ann Arbor, MI</strong></a><br>416 W Huron St Suite 20<br>Phone: (734) 773-3147</li>
-            <li><a href="/ttspa/locations/flint" class="text-pink-500 hover:underline"><strong>Flint, MI</strong></a><br>4225 Miller Rd, Ste B6<br>Phone: (810) 877-6206</li>
-            <li><a href="/ttspa/locations/grand-rapids" class="text-pink-500 hover:underline"><strong>Grand Rapids, MI</strong></a><br>916 Chicago Dr, Unit A<br>Phone: (616) 342-2922</li>
-            <li><a href="/ttspa/locations/lansing" class="text-pink-500 hover:underline"><strong>Lansing, MI</strong></a><br>3405 S Cedar St<br>Phone: (517) 574-4795</li>
+            <li><a href="/locations/ann-arbor" class="text-pink-500 hover:underline"><strong>Ann Arbor, MI</strong></a><br>416 W Huron St Suite 20<br>Phone: (734) 773-3147</li>
+            <li><a href="/locations/flint" class="text-pink-500 hover:underline"><strong>Flint, MI</strong></a><br>4225 Miller Rd, Ste B6<br>Phone: (810) 877-6206</li>
+            <li><a href="/locations/grand-rapids" class="text-pink-500 hover:underline"><strong>Grand Rapids, MI</strong></a><br>916 Chicago Dr, Unit A<br>Phone: (616) 342-2922</li>
+            <li><a href="/locations/lansing" class="text-pink-500 hover:underline"><strong>Lansing, MI</strong></a><br>3405 S Cedar St<br>Phone: (517) 574-4795</li>
           </ul>
         </div>
   
@@ -314,10 +323,10 @@
         <div>
           <h3 class="text-lg font-bold text-pink-500 mb-4">More Michigan Locations</h3>
           <ul class="text-sm space-y-3">
-            <li><a href="/ttspa/locations/monroe" class="text-pink-500 hover:underline"><strong>Monroe, MI</strong></a><br>325 S Telegraph Rd<br>Phone: (734) 597-2008</li>
-            <li><a href="/ttspa/locations/mount-clemens" class="text-pink-500 hover:underline"><strong>Mount Clemens, MI</strong></a><br>311 Southbound Gratiot Ave<br>Phone: (586) 690-8167</li>
-            <li><a href="/ttspa/locations/southgate" class="text-pink-500 hover:underline"><strong>Southgate, MI</strong></a><br>12154 Dix Toledo Rd<br>Phone: (248) 242-0195</li>
-            <li><a href="/ttspa/locations/walled-lake" class="text-pink-500 hover:underline"><strong>Walled Lake, MI</strong></a><br>1332 S Commerce Rd<br>Phone: (248) 438-6757</li>
+            <li><a href="/locations/monroe" class="text-pink-500 hover:underline"><strong>Monroe, MI</strong></a><br>325 S Telegraph Rd<br>Phone: (734) 597-2008</li>
+            <li><a href="/locations/mount-clemens" class="text-pink-500 hover:underline"><strong>Mount Clemens, MI</strong></a><br>311 Southbound Gratiot Ave<br>Phone: (586) 690-8167</li>
+            <li><a href="/locations/southgate" class="text-pink-500 hover:underline"><strong>Southgate, MI</strong></a><br>12154 Dix Toledo Rd<br>Phone: (248) 242-0195</li>
+            <li><a href="/locations/walled-lake" class="text-pink-500 hover:underline"><strong>Walled Lake, MI</strong></a><br>1332 S Commerce Rd<br>Phone: (248) 438-6757</li>
           </ul>
         </div>
   
@@ -325,10 +334,10 @@
         <div>
           <h3 class="text-lg font-bold text-pink-500 mb-4">Ohio & Canada Locations</h3>
           <ul class="text-sm space-y-3">
-            <li><a href="/ttspa/locations/cleveland" class="text-pink-500 hover:underline"><strong>Cleveland, OH</strong></a><br>812 E 185th St<br>Phone: (216) 331-4399</li>
-            <li><a href="/ttspa/locations/columbus" class="text-pink-500 hover:underline"><strong>Columbus, OH</strong></a><br>850 King Ave<br>Phone: (614) 696-4014</li>
-            <li><a href="/ttspa/locations/toledo" class="text-pink-500 hover:underline"><strong>Toledo, OH</strong></a><br>4026 Secor Rd<br>Phone: (567) 315-8410</li>
-            <li><a href="/ttspa/locations/windsor" class="text-pink-500 hover:underline"><strong>Windsor, ON</strong></a><br>75 Riverside Dr E<br>Phone: (519) 962-0757</li>
+            <li><a href="/locations/cleveland" class="text-pink-500 hover:underline"><strong>Cleveland, OH</strong></a><br>812 E 185th St<br>Phone: (216) 331-4399</li>
+            <li><a href="/locations/columbus" class="text-pink-500 hover:underline"><strong>Columbus, OH</strong></a><br>850 King Ave<br>Phone: (614) 696-4014</li>
+            <li><a href="/locations/toledo" class="text-pink-500 hover:underline"><strong>Toledo, OH</strong></a><br>4026 Secor Rd<br>Phone: (567) 315-8410</li>
+            <li><a href="/locations/windsor" class="text-pink-500 hover:underline"><strong>Windsor, ON</strong></a><br>75 Riverside Dr E<br>Phone: (519) 962-0757</li>
           </ul>
         </div>
       </div>
